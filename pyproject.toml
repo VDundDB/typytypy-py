@@ -100,6 +100,9 @@ exclude = [
 
 [tool.ruff.lint.per-file-ignores]
 "__init__.py" = ["F401"]  # Allow unused imports in init files
+"src/__init__.py" = ["D104"]  # Empty namespace marker
+"tests/__init__.py" = ["D104"]  # Empty test namespace marker
+"tests/typytypy/__init__.py" = ["D104"]  # Empty test subpackage marker
 "tests/*.py" = ["ANN"]    # Skip type annotations in tests
 
 [tool.ruff.lint.pydocstyle]
