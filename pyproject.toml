@@ -32,7 +32,28 @@ classifiers = [
     "Topic :: Terminals",
     "Topic :: Text Processing",
 ]
-keywords = []
+keywords = [
+    "animation",
+    "API",
+    "application",
+    "character personality",
+    "configurable",
+    "console",
+    "custom",
+    "kitschcode",
+    "output",
+    "presets",
+    "printing",
+    "profile",
+    "realistic",
+    "real-time",
+    "simulation",
+    "terminal",
+    "text",
+    "timing",
+    "typewriter",
+    "typing",
+]
 requires-python = ">=3.10"
 dependencies = []
 
