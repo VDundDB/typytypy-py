@@ -50,3 +50,7 @@ jobs:
     - name: Test with pytest
       run: |
         pytest
+
+    - name: Build documentation
+      run: |
+        sphinx-build -W --keep-going docs/source docs/build/html

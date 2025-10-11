@@ -4,10 +4,11 @@ build-backend = "hatchling.build"
 
 [project]
 name = "typytypy"
-version = "0.1.0"
+dynamic = ["version"]
 description = "A Bespoke Character-by-Character Text Printer."
 readme = "README.md"
-license = {text = "Apache-2.0"}
+license = "Apache-2.0"
+license-files = ["LICENSE"]
 authors = [
     {name = "KitscherEins"},
 ]
@@ -59,7 +60,9 @@ dependencies = []
 
 [project.urls]
 Homepage = "https://github.com/VDundDB/typytypy-py"
+Documentation = "https://VDundDB.github.io/typytypy-py"
 Repository = "https://github.com/VDundDB/typytypy-py"
+PyPI = "https://pypi.org/project/typytypy"
 Issues = "https://github.com/VDundDB/typytypy-py/issues"
 Changelog = "https://github.com/VDundDB/typytypy-py/blob/main/CHANGELOG.md"
 
@@ -71,6 +74,11 @@ dev = [
     "black>=25.9.0",
     "mypy>=1.18.2",
     "vermin>=1.6.0",
+    "sphinx>=8.2.3",
+    "sphinx-autobuild>=2025.8.25",
+    "sphinx-togglebutton>=0.3.2",
+    "myst-parser>=4.0.1",
+    "furo>=2025.9.25",
 ]
 test = [
     "pytest>=8.4.2",
@@ -84,6 +92,10 @@ packages = ["src/typytypy"]
 include = [
     "/src",
     "/tests",
+    "/docs/source",
+    "/docs/make.bat",
+    "/docs/Makefile",
+    "/assets",
     "/README.md",
     "/LICENSE",
     "/CHANGELOG.md",
