@@ -46,8 +46,11 @@ __description__ = "A Bespoke Character-by-Character Text Printer."
 
 # Package URLs for distribution
 __homepage__ = "https://github.com/VDundDB/typytypy-py"
-__documentation__ = "https://VDundDB.github.io/typytypy-py/"
+__documentation__ = "https://VDundDB.github.io/typytypy-py"
 __repository__ = "https://github.com/VDundDB/typytypy-py"
+__pypi__ = "https://pypi.org/project/typytypy"
+__issues__ = "https://github.com/VDundDB/typytypy-py/issues"
+__changelog__ = "https://github.com/VDundDB/typytypy-py/blob/main/CHANGELOG.md"
 
 # Create a default global instance for direct module-level usage
 _default_printer = PrintingPress()
@@ -62,15 +65,15 @@ class _TimingPresets:
     delay_range) in seconds and can be used to create a limited preset printer.
 
     Attributes:
-        DEFAULT (tuple[float, float]): Standard typing speed for general use.
-        EMPHASIS (tuple[float, float]): Moderate typing for important content.
-        SLOW (tuple[float, float]): Deliberate typing for dramatic effect.
-        CONTEMPLATIVE (tuple[float, float]): Slow, thoughtful typing.
-        NERVOUS (tuple[float, float]): Erratic, hesitant typing style.
+        DEFAULT (tuple[float, float]): Standard typing speed.
+        EMPHASIS (tuple[float, float]): Moderate typing speed.
+        SLOW (tuple[float, float]): Deliberate, careful typing.
+        CONTEMPLATIVE (tuple[float, float]): Thoughtful, reflective typing.
+        NERVOUS (tuple[float, float]): Anxious, hesitant typing.
         AVERAGE (tuple[float, float]): Approximate researched average typing speed.
-        CONFIDENT (tuple[float, float]): Steady, professional, controlled typing.
+        CONFIDENT (tuple[float, float]): Steady, professional typing.
         ROBOTIC (tuple[float, float]): Mechanical, consistent typing.
-        CHAOTIC (tuple[float, float]): Highly variable, distracted style.
+        CHAOTIC (tuple[float, float]): Distracted, erratic typing.
     """
 
     # Standard presets
@@ -345,6 +348,9 @@ __all__ = [
     "__license__",
     "__description__",
     "__homepage__",
-    "__repository__",
     "__documentation__",
+    "__repository__",
+    "__pypi__",
+    "__issues__",
+    "__changelog__",
 ]

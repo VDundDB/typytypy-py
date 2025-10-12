@@ -16,10 +16,13 @@ from src.typytypy import (
     PrintingPress,
     # Package metadata
     __author__,
+    __changelog__,
     __description__,
     __documentation__,
     __homepage__,
+    __issues__,
     __license__,
+    __pypi__,
     __repository__,
     __version__,
     _PresetPrinter,
@@ -60,15 +63,33 @@ class TestPackageMetadata:
         assert __homepage__ == "https://github.com/VDundDB/typytypy-py"
         assert isinstance(__homepage__, str)
 
+    def test_documentation_constant(self):
+        """Test __documentation__ constant is correctly defined."""
+        assert __documentation__ == "https://VDundDB.github.io/typytypy-py"
+        assert isinstance(__documentation__, str)
+
     def test_repository_constant(self):
         """Test __repository__ constant is correctly defined."""
         assert __repository__ == "https://github.com/VDundDB/typytypy-py"
         assert isinstance(__repository__, str)
 
-    def test_documentation_constant(self):
-        """Test __documentation__ constant is correctly defined."""
-        assert __documentation__ == "https://VDundDB.github.io/typytypy-py/"
-        assert isinstance(__documentation__, str)
+    def test_pypi_constant(self):
+        """Test __pypi__ constant is correctly defined."""
+        assert __pypi__ == "https://pypi.org/project/typytypy"
+        assert isinstance(__pypi__, str)
+
+    def test_issues_constant(self):
+        """Test __issues__ constant is correctly defined."""
+        assert __issues__ == "https://github.com/VDundDB/typytypy-py/issues"
+        assert isinstance(__issues__, str)
+
+    def test_changelog_constant(self):
+        """Test __changelog__ constant is correctly defined."""
+        assert (
+            __changelog__
+            == "https://github.com/VDundDB/typytypy-py/blob/main/CHANGELOG.md"
+        )
+        assert isinstance(__changelog__, str)
 
 
 class TestDefaultPrinterInstance:
@@ -595,8 +616,11 @@ class TestExports:
             "__license__",
             "__description__",
             "__homepage__",
-            "__repository__",
             "__documentation__",
+            "__repository__",
+            "__pypi__",
+            "__issues__",
+            "__changelog__",
         ]
 
         assert typytypy.__all__ == expected_exports
@@ -634,8 +658,11 @@ class TestExports:
             "__license__",
             "__description__",
             "__homepage__",
-            "__repository__",
             "__documentation__",
+            "__repository__",
+            "__pypi__",
+            "__issues__",
+            "__changelog__",
         ]
 
         for item in metadata_items:
@@ -881,8 +908,11 @@ class TestComprehensiveCoverage:
             "__license__",
             "__description__",
             "__homepage__",
-            "__repository__",
             "__documentation__",
+            "__repository__",
+            "__pypi__",
+            "__issues__",
+            "__changelog__",
         ]
 
         assert typytypy.__all__ == expected_all
