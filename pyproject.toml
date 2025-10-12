@@ -67,13 +67,11 @@ Issues = "https://github.com/VDundDB/typytypy-py/issues"
 Changelog = "https://github.com/VDundDB/typytypy-py/blob/main/CHANGELOG.md"
 
 [project.optional-dependencies]
-dev = [
+test = [
     "pytest>=8.4.2",
     "pytest-cov>=7.0.0",
-    "ruff>=0.14.0",
-    "black>=25.9.0",
-    "mypy>=1.18.2",
-    "vermin>=1.6.0",
+]
+docs = [
     "sphinx>=8.2.3",
     "sphinx-autobuild>=2025.8.25",
     "sphinx-design>=0.6.1",
@@ -82,9 +80,12 @@ dev = [
     "myst-parser>=4.0.1",
     "furo>=2025.9.25",
 ]
-test = [
-    "pytest>=8.4.2",
-    "pytest-cov>=7.0.0",
+dev = [
+    "typytypy[test,docs]",
+    "ruff>=0.14.0",
+    "black>=25.9.0",
+    "mypy>=1.18.2",
+    "vermin>=1.6.0",
 ]
 
 [tool.hatch.build.targets.wheel]
