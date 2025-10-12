@@ -85,11 +85,32 @@ printer.update_profile_timing("highlight", 0.2, 0.1)
 printer.delete_profile("highlight")
 ```
 
-```{admonition} A Little Spark (for the curious soul)
+`````{admonition} A Little Spark (for the curious soul)
 :class: seealso dropdown
+
+````{tab-set}
+:sync-group: OS
+
+```{tab-item} Linux/macOS
+:sync: unix
+
+Run this command in your terminal:
+
+    python3 -m typytypy.core
+
+*It is (probably) safe, I promise.*
+```
+
+```{tab-item} Windows
+:sync: microsoft
+
 Run this command in your terminal:
 
     python -m typytypy.core
 
 *It is (probably) safe, I promise.*
 ```
+
+````
+
+`````

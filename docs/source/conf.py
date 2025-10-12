@@ -29,7 +29,9 @@ extensions = [
     'sphinx.ext.napoleon',     # Parse Google-style docstrings
     'sphinx.ext.viewcode',     # Add links to source code
     'myst_parser',             # Support for Markdown files using MyST parser
-    'sphinx_togglebutton',     # Support for dropdown feature
+    'sphinx_copybutton',       # Enable copy button for code blocks
+    'sphinx_design',           # Support responsive web components
+    'sphinx_togglebutton',     # Enable dropdown feature
 ]
 
 # MyST parser configuration

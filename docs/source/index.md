@@ -42,9 +42,13 @@ TypyTypy is licensed under the [Apache-2.0 license](https://opensource.org/licen
 
 ## Installation
 
-```{code-block}
+````{tab-set-code}
+
+```{code-block} python
 pip install typytypy
 ```
+
+````
 
 ----
 
