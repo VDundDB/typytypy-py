@@ -4,10 +4,11 @@ build-backend = "hatchling.build"
 
 [project]
 name = "typytypy"
-version = "0.1.0"
+dynamic = ["version"]
 description = "A Bespoke Character-by-Character Text Printer."
 readme = "README.md"
-license = {text = "Apache-2.0"}
+license = "Apache-2.0"
+license-files = ["LICENSE"]
 authors = [
     {name = "KitscherEins"},
 ]
@@ -32,28 +33,59 @@ classifiers = [
     "Topic :: Terminals",
     "Topic :: Text Processing",
 ]
-keywords = []
+keywords = [
+    "animation",
+    "API",
+    "application",
+    "character personality",
+    "configurable",
+    "console",
+    "custom",
+    "kitschcode",
+    "output",
+    "presets",
+    "printing",
+    "profile",
+    "realistic",
+    "real-time",
+    "simulation",
+    "terminal",
+    "text",
+    "timing",
+    "typewriter",
+    "typing",
+]
 requires-python = ">=3.10"
 dependencies = []
 
 [project.urls]
 Homepage = "https://github.com/VDundDB/typytypy-py"
+Documentation = "https://VDundDB.github.io/typytypy-py"
 Repository = "https://github.com/VDundDB/typytypy-py"
+PyPI = "https://pypi.org/project/typytypy"
 Issues = "https://github.com/VDundDB/typytypy-py/issues"
 Changelog = "https://github.com/VDundDB/typytypy-py/blob/main/CHANGELOG.md"
 
 [project.optional-dependencies]
-dev = [
+test = [
     "pytest>=8.4.2",
     "pytest-cov>=7.0.0",
+]
+docs = [
+    "sphinx>=8.2.3",
+    "sphinx-autobuild>=2025.8.25",
+    "sphinx-design>=0.6.1",
+    "sphinx-togglebutton>=0.3.2",
+    "sphinx-copybutton>=0.5.2",
+    "myst-parser>=4.0.1",
+    "furo>=2025.9.25",
+]
+dev = [
+    "typytypy[test,docs]",
     "ruff>=0.14.0",
     "black>=25.9.0",
     "mypy>=1.18.2",
     "vermin>=1.6.0",
-]
-test = [
-    "pytest>=8.4.2",
-    "pytest-cov>=7.0.0",
 ]
 
 [tool.hatch.build.targets.wheel]
@@ -63,6 +95,10 @@ packages = ["src/typytypy"]
 include = [
     "/src",
     "/tests",
+    "/docs/source",
+    "/docs/make.bat",
+    "/docs/Makefile",
+    "/assets",
     "/README.md",
     "/LICENSE",
     "/CHANGELOG.md",
