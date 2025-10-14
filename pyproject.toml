@@ -6,7 +6,7 @@ build-backend = "hatchling.build"
 name = "typytypy"
 dynamic = ["version"]
 description = "A Bespoke Character-by-Character Text Printer."
-readme = "README.md"
+readme = "README_PYPI.md"
 license = "Apache-2.0"
 license-files = ["LICENSE"]
 authors = [
@@ -100,6 +100,7 @@ include = [
     "/docs/Makefile",
     "/assets",
     "/README.md",
+    "/README_PYPI.md",
     "/LICENSE",
     "/CHANGELOG.md",
     "/pyproject.toml",
