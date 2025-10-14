@@ -1,6 +1,6 @@
 <img src="assets/images/logo/typytypy-logo-full.svg" alt="TypyTypy logo" role="img" style="display:block; margin:0 auto;"/>
 
-# TypyTypy *(typytypy-py)*
+# TypyTypy *(typytypy)*
 
 *— A Bespoke Character-by-Character Text Printer.*
 
@@ -191,6 +191,12 @@ mypy src/ tests/
 # Run all tests with coverage
 pytest
 ```
+
+---
+
+## Documentation
+
+Full documentation: <https://VDundDB.github.io/typytypy-py>
 
 ---
 
