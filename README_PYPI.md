@@ -1,4 +1,4 @@
-<img src="assets/images/logo/typytypy-logo-full.svg" alt="TypyTypy logo" role="img" style="display:block; margin:0 auto;"/>
+<img src="https://raw.githubusercontent.com/VDundDB/typytypy-py/main/assets/images/logo/typytypy-logo-full.svg" alt="TypyTypy logo" role="img" style="display:block; margin:0 auto;"/>
 
 # TypyTypy *(typytypy)*
 
@@ -155,42 +155,6 @@ confident.type_out("Good morning, team!")
 **Configuration:**
 
 - `set_profile_case_sensitivity(sensitive)`: Configure case-sensitivity for word matching.
-
----
-
-## Development
-
-### Requirements
-
-- Python 3.10+
-- No runtime dependencies
-
-### Development Setup
-
-#### Clone repository
-
-```shell
-git clone https://github.com/VDundDB/typytypy-py.git
-
-cd typytypy-py
-```
-
-#### Install development dependencies
-
-```python
-pip install -e ".[dev]"
-```
-
-#### Run quality checks
-
-```python
-ruff check src/ tests/
-black --check src/ tests/
-mypy src/ tests/
-
-# Run all tests with coverage
-pytest
-```
 
 ---
 
